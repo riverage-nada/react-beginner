@@ -1,0 +1,28 @@
+@use "css/base/variable/mixin" as *;
+@use "css/template" as *;
+
+.section {
+  &--info {
+    margin-bottom: 25px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0;
+}
+
+.formInput {
+  width: 100%;
+}
+
+.textarea {
+  min-height: 121px;
+}

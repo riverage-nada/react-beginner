@@ -1,0 +1,72 @@
+@use "sass:math";
+
+$baseLineHeight: 1.5;
+
+$themeColors: (
+  "t_main": (
+    "#000000",
+    "#000000",
+  ),
+  "t_sub": (
+    "#848A98",
+    "#FFFFFF",
+  ),
+  "bg_main": (
+    "#ffffff",
+    "#ffffff",
+  ),
+);
+
+$shadows: (
+  "main": "box-shadow: 5px 6px 24px rgba(126, 132, 161, 0.1);",
+);
+
+$theme_main: #358572;
+
+$fontSize_head: 28.37;
+$fontSize_paragraph: 19;
+$color_link: #0078ff;
+$colorBgGray: #f7f7f7;
+$colorGreen: #4b904f;
+$fontGray: #6a6565;
+$fontLightgray: #6a6565;
+$fontRed: #d9534f;
+$colorPink: #ea117c;
+$colorBlue: #0275d8;
+$colorPurple: #616be7;
+
+$choiceColors: #4185f4, #ea4335, #fbbc04, #33a854, #ff6d00, #46bdc6, #7baaf7,
+  #f07a73, #fcd050, #70c287, #ff994e, #7fd1d7;
+
+/**
+* comment
+*/
+$commentBg--green: #d8ece0;
+$commentBg--yellow: #fce59b;
+$commentBg--pink: #fbcce3;
+$commentBg--blue: #03a9f4;
+
+/**
+* img
+*/
+
+$goldenRatio: percentage(math.div(1, 1.618));
+$wideRatio: percentage(math.div(9, 16));
+
+/**
+* layout
+*/
+
+$scrollBarWidth: 15px;
+
+/**
+* layout account 
+*/
+$accountHeaderHeight: 50px;
+$accountSidebarWidth: 220px;
+$accountContentWidth: calc(100% - #{$accountSidebarWidth});
+
+.full-width {
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+}

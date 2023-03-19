@@ -1,22 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
-import { useEffect } from "react";
-import styles from "../styles/Home.module.css";
+import Index from "../src/template/Index";
 
-export default function Home() {
-  useEffect(() => {
-    fetch("/api/hello")
-      .then((res) => {
-        return res.json();
-      })
-      .then((res) => {
-        console.log(res);
-      });
-  }, []);
+const Index_Pge = () => {
+  return <Index />;
+};
 
-  return (
-    <div className={styles.container}>
-      <p>hello world!</p>
-    </div>
-  );
-}
+export default Index_Pge;

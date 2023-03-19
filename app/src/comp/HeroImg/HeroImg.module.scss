@@ -1,0 +1,13 @@
+@use "css/base/variable/mixin" as *;
+
+.comp {
+  width: 100%;
+  @include imgFitContainer(1 * 100%);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(5px 6px 24px rgba(0, 0, 0, 0.25));
+  border-radius: 21.7px;
+}
