@@ -5,8 +5,8 @@ const Head = (props) => {
   return (
     <div className={`${css["comp"]}`}>
       <p className={`${css["head"]}`}>{props.head}</p>
-      <div className={`${css.imgCircle}`}>
-        <img className={`${css.img}`} src="/check.png" alt="" />
+      <div className={`${css["imgCircle"]}`}>
+        <img className={`${css["img"]}`} src="/check.png" alt="" />
       </div>
     </div>
   );
