@@ -1,5 +1,5 @@
 @use "css/base/variable/mixin" as *;
-@use "css/template" as *;
+@use "@/template/common/template" as *;
 
 .section {
   &--info {

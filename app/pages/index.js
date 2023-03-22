@@ -1,7 +1,7 @@
 import Index from "../src/template/Index";
 
-const Index_Pge = () => {
+const Index_Page = () => {
   return <Index />;
 };
 
-export default Index_Pge;
+export default Index_Page;
