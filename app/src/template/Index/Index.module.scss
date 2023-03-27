@@ -1,2 +1,6 @@
 @use "css/base/variable/mixin" as *;
 @use "@/template/common/template" as *;
+
+.sample {
+  color: red;
+}

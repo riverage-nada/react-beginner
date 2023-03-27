@@ -21,6 +21,12 @@
 
 .formInput {
   width: 100%;
+  resize: none;
+  font-size: 1.4rem;
+
+  @include mq($breakpoint: sp) {
+    font-size: 1.6rem;
+  }
 }
 
 .textarea {
