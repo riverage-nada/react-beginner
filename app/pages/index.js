@@ -1,7 +1,6 @@
-import Index from "../src/template/Index";
-
-const Index_Page = () => {
-  return <Index />;
-};
-
-export default Index_Page;
+export default function Home() {
+  return (
+    // ここを丸ごと以下に書き換える
+    <p>hello world!</p>
+  );
+}
