@@ -79,4 +79,28 @@ const Reserve = () => {
   );
 };
 
+const XXX = () => {
+  const [name, setname] = useState("");
+  const [body, setbody] = useState("");
+
+  return (
+    <form action="">
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => {
+          setname(e.target.value);
+        }}
+      />
+      <textarea
+        value={body}
+        onChange={(e) => {
+          setbody(e.target.value);
+        }}
+      />
+      <input type="submit" value="送信" />
+    </form>
+  );
+};
+
 export default Reserve;
