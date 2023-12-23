@@ -4,8 +4,22 @@ import HeroImg from "@/comp/HeroImg";
 import Member from "@/comp/Member";
 import css from "./Index.module.scss";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Index = () => {
+  const [isApplyed, setisApplyed] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem("applyed")) {
+      setisApplyed(true);
+    }
+  }, []);
+
+  const removeApply = () => {
+    localStorage.removeItem("applyed");
+    setisApplyed(false);
+  };
+
   return (
     <div className={`${css["comp"]}`}>
       <section className={`${css["section--hero"]}`}>
@@ -24,9 +38,16 @@ const Index = () => {
       </section>
 
       <section className={`${css["section--button"]}`}>
-        <Link href={"/reserve"}>
-          <Button text={"参加する"} />
-        </Link>
+        {isApplyed ? (
+          <div>
+            <p>申し込み済みです</p>
+            <button onClick={removeApply}>localStorageを削除</button>
+          </div>
+        ) : (
+          <Link href={"/reserve"}>
+            <Button text={"参加する"} />
+          </Link>
+        )}
       </section>
 
       <section className={`${css["section--list"]}`}>

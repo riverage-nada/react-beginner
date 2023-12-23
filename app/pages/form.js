@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Form = () => {
   const router = useRouter();
@@ -32,7 +32,7 @@ const Form = () => {
       .then((response) => {
         console.log(response);
         localStorage.setItem("applyed", true);
-        router;
+        router.push("/");
       });
   };
 
